@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Clubs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: #0077cc;
+    }
+
+    .club-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .club-card {
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .club-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    .club-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .club-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .club-info h2 {
+      color: #0077cc;
+      margin-bottom: 8px;
+    }
+
+    .club-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .club-description {
+      display: none;
+      background-color: #ffffff;
+      padding: 15px;
+      text-align: justify;
+      font-size: 0.95em;
+      line-height: 1.5;
+      border-top: 1px solid #eee;
+      animation: fadeIn 0.4s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>University Clubs</h1>
+  </header>
+
+  <div class="club-container">
+    <!-- === CLUB 1 === -->
+    <div class="club-card" onclick="toggleDescription(this)">
+      <!-- 🔹 Replace the path below with your photo -->
+      <img src="C:\Users\GEEK\Desktop\english_project\images (2).jpg" alt="Codec Club">
+      <div class="club-info">
+        <!-- 🔹 Replace with club name -->
+        <h2>Codec club</h2>
+        <!-- 🔹 Replace with president’s name -->
+        <p><strong>President:</strong> KADRI Taysir Mohammed Lahbib</p>
+        <!-- 🔹 Replace with club type (Scientific/Cultural) -->
+        <p><strong>Type:</strong> Scientific</p>
+        <p><strong>Email:</strong> codec@ensta.edu.dz</p>
+      </div>
+      <!-- 🔹 Replace with your club’s description -->
+      <div class="club-description">
+         Community of Developers and Engineers Club (CODEC)
+
+          The Community of Developers and Engineers Club. Our mission is to empower students and young professionals to grow both their technical and human skills
+
+          At CODEC, Members work together on real world projects, workshops, creativity and collaboration.
+
+          CODEC is the place to build, learn, and lead.    
+      </div>
+    </div>
+
+    <!-- === CLUB 2 === -->
+    <div class="club-card" onclick="toggleDescription(this)">
+      <img src="C:\Users\GEEK\Desktop\english_project\images (1).jpg" alt="AI Club">
+      <div class="club-info">
+        <h2>Ensteins</h2>
+        <p><strong>President:</strong> GUETTA Siham</p>
+        <p><strong>Type:</strong> Scientific</p>
+        <p><strong>Email:</strong> ensteins@ensta.edu.dz</p>
+
+      </div>
+      <div class="club-description">
+        A creative space where technology meets imagination. We design,build and program, Join us to learn, experiment!
+      </div>
+    </div>
+
+    <!-- === CLUB 3 === -->
+    <div class="club-card" onclick="toggleDescription(this)">
+      <img src="C:\Users\GEEK\Desktop\english_project\Screenshot 2025-11-06 210122.png" alt="Cybersecurity Club">
+      <div class="club-info">
+        <h2>Light club</h2>
+        <p><strong>President:</strong> lightclub@ensta.edu.dz</p>
+        <p><strong>Type:</strong> Cultural</p>
+        <p><strong>Email:</strong> lightclub@ensta.edu.dz</p>
+
+      </div>
+      <div class="club-description">
+        Light club is a cultural community that shines through creativity,communication.together,we bring students passion about soft skills and leaderships .
+      </div>
+    </div>
+
+    <!-- === CLUB 4 === -->
+    <div class="club-card" onclick="toggleDescription(this)">
+      <img src="C:\Users\GEEK\Desktop\english_project\unnamed.jpg" alt="Culture Club">
+      <div class="club-info">
+        <h2>Mechaholics</h2>
+        <p><strong>President:</strong> CHENNOUN Imad Eddine </p>
+        <p><strong>Type:</strong> Scientific</p>
+        <p><strong>Email:</strong> mecaholics@ensta.edu.dzz</p>
+
+      </div>
+      <div class="club-description">
+        Mechaholic club is where passion for mechanics comes to life 
+      </div>
+    </div>
+
+
+    <div class="club-card" onclick="toggleDescription(this)">
+      <img src="C:\Users\GEEK\Desktop\english_project\téléc.png" alt="Culture Club">
+      <div class="club-info">
+        <h2>Btec</h2>
+        <p><strong>President:</strong> No current president </p>
+        <p><strong>Type:</strong> Scientific</p>
+        <p><strong>Email:</strong> btec@ensta.edu.dz</p>
+
+      </div>
+      <div class="club-description">
+        
+      </div>
+    </div>
+
+    <div class="club-card" onclick="toggleDescription(this)">
+      <img src="C:\Users\GEEK\Desktop\english_project\téléchar.jpg" alt="Culture Club">
+      <div class="club-info">
+        <h2>Plugin</h2>
+        <p><strong>President:</strong> HAMMADI Mohamed</p>
+        <p><strong>Type:</strong> Scientific</p>
+        <p><strong>Email:</strong> plugin@ensta.edu.dz</p>
+
+      </div>
+      <div class="club-description">
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <a href="index.html" class="back-link">⬅ Back to Home</a>
+
+  <script>
+    // === SHOW/HIDE DESCRIPTION WHEN A CLUB IS CLICKED ===
+    function toggleDescription(card) {
+      const desc = card.querySelector('.club-description');
+      const isVisible = desc.style.display === 'block';
+      // Hide all others first
+      document.querySelectorAll('.club-description').forEach(d => d.style.display = 'none');
+      // Toggle this one
+      desc.style.display = isVisible ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

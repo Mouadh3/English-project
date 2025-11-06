@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENSTA - Specialties</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: white;
+      color: #222;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0044cc;
+    }
+
+    main {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #000000;
+      margin-bottom: 40px;
+    }
+
+    .specialties-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .specialty {
+      background-color: #fafafa;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .specialty:hover {
+      transform: translateY(-5px);
+    }
+
+    .specialty h3 {
+      color: #000000;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid #ddd;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">ENSTA</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="clubs.html">Clubs</a>
+      <a href="specialties.html">Specialties</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>ENSTA Engineering Specialties</h1>
+
+    <div class="specialties-grid">
+      <div class="specialty"><h3>Mechanical and Energy Engineering</h3></div>
+      <div class="specialty"><h3>Renewable Energy and Energy Storage</h3></div>
+      <div class="specialty"><h3>Artificial Intelligence and Applications</h3></div>
+      <div class="specialty"><h3>Systems Security</h3></div>
+      <div class="specialty"><h3>Telecommunication and Networks</h3></div>
+      <div class="specialty"><h3>Automation and Industrial Computing</h3></div>
+      <div class="specialty"><h3>Maintenance Engineering and Management</h3></div>
+      <div class="specialty"><h3>Embedded Systems</h3></div>
+      <div class="specialty"><h3>Mechatronics</h3></div>
+      <div class="specialty"><h3>Industrial Engineering</h3></div>
+      <div class="specialty"><h3>Supply Chain Engineering</h3></div>
+      <div class="specialty"><h3>Transportation Engineering</h3></div>
+      <div class="specialty"><h3>Mechanical Design Engineering</h3></div>
+      <div class="specialty"><h3>Water Treatment Engineering</h3></div>
+      <div class="specialty"><h3>Organic Processes & Electrical Traction</h3></div>
+    </div>
+    <a href="index.html" class="back-link">⬅ Back to Home</a>
+  </main>
+
+  <footer>
+    Just English project
+  </footer>
+
+</body>
+</html>
